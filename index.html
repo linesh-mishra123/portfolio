@@ -1,0 +1,361 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b70952e9f3.js" crossorigin="anonymous" defer></script>
+        <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    </head>
+    <body>
+
+        <!-- navbar section -->
+
+        <section id="header">
+            <nav id="navbar">
+                <div class="logo">PORT<span>FOLIO </span></div>
+                    <ul id="sidemenu">
+                        <li><a href="#header" class="active-nav link">Home</a></li>
+                        <li><a href="#about" class="link">About</a></li>
+                        <li><a href="#skills" class="link">Skills</a></li>
+                        <li><a href="#certification" class="link">Certification</a></li>
+                        <li><a href="#portfolio" class="link">Portfolio</a></li>
+                        <li><a href="#contact" class="link">Contact</a></li>
+                        <i class="fa-solid fa-xmark" style="position: absolute; left: 160px;" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s; top:70px; position:absolute" viewBox="0 0 1440 330" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(2.597, 2.574, 2.581, 0.84)" offset="0%"></stop><stop stop-color="rgba(232.552, 20.432, 89.143, 0.83)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,99L80,126.5C160,154,320,209,480,203.5C640,198,800,132,960,126.5C1120,121,1280,176,1440,203.5C1600,231,1760,231,1920,214.5C2080,198,2240,165,2400,176C2560,187,2720,242,2880,220C3040,198,3200,99,3360,71.5C3520,44,3680,88,3840,93.5C4000,99,4160,66,4320,93.5C4480,121,4640,209,4800,242C4960,275,5120,253,5280,203.5C5440,154,5600,77,5760,38.5C5920,0,6080,0,6240,44C6400,88,6560,176,6720,209C6880,242,7040,220,7200,214.5C7360,209,7520,220,7680,236.5C7840,253,8000,275,8160,275C8320,275,8480,253,8640,236.5C8800,220,8960,209,9120,176C9280,143,9440,88,9600,88C9760,88,9920,143,10080,165C10240,187,10400,176,10560,148.5C10720,121,10880,77,11040,60.5C11200,44,11360,55,11440,60.5L11520,66L11520,330L11440,330C11360,330,11200,330,11040,330C10880,330,10720,330,10560,330C10400,330,10240,330,10080,330C9920,330,9760,330,9600,330C9440,330,9280,330,9120,330C8960,330,8800,330,8640,330C8480,330,8320,330,8160,330C8000,330,7840,330,7680,330C7520,330,7360,330,7200,330C7040,330,6880,330,6720,330C6560,330,6400,330,6240,330C6080,330,5920,330,5760,330C5600,330,5440,330,5280,330C5120,330,4960,330,4800,330C4640,330,4480,330,4320,330C4160,330,4000,330,3840,330C3680,330,3520,330,3360,330C3200,330,3040,330,2880,330C2720,330,2560,330,2400,330C2240,330,2080,330,1920,330C1760,330,1600,330,1440,330C1280,330,1120,330,960,330C800,330,640,330,480,330C320,330,160,330,80,330L0,330Z"></path></svg>            <div class="container">
+                <div class="header-text">
+                    <p>Hey, This is</p>
+                    <h1><span>Linesh </span>Mishra</h1>
+                    <p class="info">An interactive <span class="tag"><</span><span class="autotext"></span><span class="tag">/></span></p>
+                    <p class="info2">I'll help you to create beautiful, modern and responsive websites your users will love. Scroll down to get detailed information about me.</p>
+                    <a href="#contact" class="hire-btn">Hire Me</a>
+                </div>                
+            </div>
+        </section>
+
+        <!-- ------ about section ------------ -->
+
+        <section id="about">            
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="about1.jpeg" alt="" class="img">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-text">Hi, My name is Linesh Kamalkishor Mishra. I am a Web Developer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I'll help you o create modern and responsive website designs.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('details')">Personal Details</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="details">
+                            <ul>
+                                <li><span><i class="fa-solid fa-id-card"></i>Name : </span>Linesh Kamalkishor Mishra</li>
+                                <li><span><i class="fa-solid fa-gift"></i>D.O.B : </span>02 January, 2004</li>
+                                <li><span><i class="fa-solid fa-location-dot"></i>Location : </span>Gondia, Maharashtra, India</li>
+                                <li><span><i class="fa-solid fa-mars"></i>Gender : </span>Male</li>
+                                <li><span><i class="fa-solid fa-calendar-days"></i>Age : </span>20</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>SSC - RNT High School, Gondia <br>Percentage - 79.80%</li>
+                                <li><span>2021</span><br>HSC - DB Science college, Gondia <br>Percentage - 85.50%</li>
+                                <li><span>2024 [Persuing]</span><br>BCA - DB Science college, Gondia <br>CGPA - 7.2</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- My Skills section ----------- -->
+
+        <section id="skills">
+            <div class="container">
+                <div class="container-child">
+                    <h1 class="sub-title">My Skills</h1>
+                    <p class="skills-text">Here is my skills to represent my experience. Main area of my skill is front end developement. I have also included my programming skills as well. </p>
+                    <div class="line"></div>
+                </div>
+
+
+                <div class="skills-list">
+                    <div class="skills-col-1">
+                        <div class="skills-heading">
+                            <h3>Web developement Skills</h3>
+                        </div>
+                        <div class="web-description">
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="html-1.svg" alt="">
+                                </div>
+                                <h3>HTML 5</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="css-3.svg" alt="">
+                                </div>
+                                <h3>CSS 3</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="bootstrap-5-1.svg" alt="">
+                                </div>
+                                <h3>Bootstrap 5</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="react-2.svg" alt="">
+                                </div>
+                                <h3>React Js</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="php-1.svg" alt="">
+                                </div>
+                                <h3>PHP</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="mysql-logo.svg" alt="">
+                                </div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-col-2">
+                        <div class="skills-heading">
+                            <h3>Programming Skills</h3>
+                        </div>
+                        <div class="programming-description">
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="c.svg" alt="">
+                                </div>
+                                <h3>C lang</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="c-1.svg" alt="">
+                                </div>
+                                <h3>C++</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="javascript-1.svg" alt="">
+                                </div>
+                                <h3>Javascript</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="java-vertical.svg" alt="">
+                                </div>
+                                <h3>Java</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="python-5.svg" alt="">
+                                </div>
+                                <h3>Python</h3>
+                            </div>
+                            <div class="skill-box">
+                                <div class="img">
+                                    <img src="nodejs-3.svg" alt="">
+                                </div>
+                                <h3>Node Js</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- certification section -->
+
+        <section id="certification">
+            <div class="container">
+                <h1 class="sub-title"><span>Certifications</span></h1>
+                <div class="certification-list">
+                    <div class="c-div">
+                        <img src="java_certificate.jpg" alt="">
+                        <div class="layer">
+                            <h3>Java Programming <br>- By Great Learning</h3>
+                            <a href="https://olympus.mygreatlearning.com/courses/12385/certificate"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="c-div">
+                        <img src="javascript_certificate.png" alt="">
+                        <div class="layer">
+                            <h3>Basics of Javascript <br> - By Openveawer</h3>
+                            <a href="https://drive.google.com/file/d/1ALgBaEUOsSF3FKOCLVn1nQrVP-07GbAF/view?usp=drive_link"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="c-div">
+                        <img src="html_css_certificate.png" alt="">
+                        <div class="layer">
+                            <h3>HTML & CSS <br> - By Openveawer</h3>
+                            <a href="https://drive.google.com/file/d/1AK-UrePJuHWKGrSehz03ahYngHmfr6A7/view?usp=drive_link"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="c-div">
+                        <img src="css_certificate.png" alt="">
+                        <div class="layer">
+                            <h3>CSS [Casacading Style Sheet]<br> - By Hackerrank</h3>
+                            <a href="https://www.hackerrank.com/certificates/0dcfa7e298c6"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="c-div">
+                        <img src="java_dsa_certificate.jpg" alt="">
+                        <div class="layer">
+                            <h3>DSA in Java<br> - By Great Learning</h3>
+                            <a href="https://olympus.mygreatlearning.com/courses/39049/certificate"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------- portfolio-work ---------- -->
+
+        <section id="portfolio">
+            <div class="container">
+                <div class="container-child">
+                    <h1 class="sub-title">My Work</h1>
+                    <p class="skills-text">Here are some of my projects or work related to web developement. I have created these projects using the skills mentioned above like HTML5, CSS3, javascript, bootstrap4, etc.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="How You're Meant to Make Money, based on your Astrology 2nd House.jpg" alt="">
+                        <div class="layer">
+                            <h3>Astrology Website</h3>
+                            <p>This is the general astrology website that studies the relationship and the movement of stars and planets.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Guitar Piano Aesthetic Classical Music Sheet Music.jpg" alt="">
+                        <div class="layer">
+                            <h3>Piano Website</h3>
+                            <p>This website allows the users to watch the piano tutorials, download piano notes and purchase it. This site i similar to any kind of e-commerce store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Forget Dinner and a Movie—These 11 Valentine's Day Date Ideas Are Even More Special.jpg" alt="">
+                        <div class="layer">
+                            <h3>Movie Website</h3>
+                            <p>This is a simple movie website where users can watch and download the movies. API is used for fetching the movies</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </section>
+
+        <!-- --------- contact section ------------  -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"><span>Contact Me</span></h1>
+                        <a href="mailto:mishralinesh623@gmail.com"><p><i class="fa-solid fa-paper-plane"></i>mishralinesh623@gamil.com</p></a>
+                        <a href="tel:9356448557"><p><i class="fa-solid fa-square-phone"></i>+91 9356448557</p></a>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/linesh.mishra.18/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/linesh_mishra/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/linesh-mishra-3b3402281"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Resume_Linesh_Mishra.pdf" download class="btn btn2 d-btn">Download Cv</a>
+                    </div>
+                    <div class="contact-right">
+                        <h1 class="cr-heading" id="get-in-touch"><span>Get in Touch</span></h1>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="24f8f292-a87d-44a5-90e7-1f5f354e6a3c">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i>All Rights Reserved!</p>
+            </div>
+        </section>
+
+    </body>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0px";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        const li = document.querySelectorAll('.link');
+        const sec = document.querySelectorAll('section');
+        
+        function activeMenu(){
+            let  len = sec.length;
+            while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+            li.forEach(ltx => ltx.classList.remove('active-nav'));
+            li[len].classList.add('active-nav');
+        }
+        activeMenu();
+        window.addEventListener('scroll',activeMenu);
+    </script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        var navbar = document.getElementById('navbar'); 
+        var menu = document.getElementById('sidemenu');
+        var typed = new Typed('.autotext',{
+            strings : ["Web Developer","Programmer","Youtuber"],
+            typeSpeed : 130,
+            backSpeed : 70,
+            loop : true
+        });
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        }
+
+    </script>
+
+</html>
